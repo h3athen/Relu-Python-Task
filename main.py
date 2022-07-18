@@ -24,6 +24,5 @@ def Main():
         price.getPrice(soup)
         detail.getDetail(soup)
 
-
 if __name__ == '__main__':
     Main()
