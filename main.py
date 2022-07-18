@@ -11,6 +11,7 @@ def Main():
     #opening csv file (AmazonScrapingSheet.csv)
     with open('AmazonScrapingSheet.csv', 'r') as file:
         reader = csv.reader(file)
+        next(reader)
         for line in reader:
             country = line[3]
             asin    = line[2]
